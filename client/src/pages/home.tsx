@@ -776,9 +776,9 @@ function Footer() {
                 <Phone size={14} />
                 (857) 800-6951
               </a>
-              <a href="mailto:info@littlejungledaycare.com" className="flex items-center gap-2 text-white/70 text-sm" data-testid="link-footer-email">
+              <a href="mailto:Thelittlejunglefamilychildcare@gmail.com" className="flex items-center gap-2 text-white/70 text-sm" data-testid="link-footer-email">
                 <Mail size={14} />
-                info@littlejungledaycare.com
+                Thelittlejunglefamilychildcare@gmail.com
               </a>
               <div className="flex items-center gap-2 text-white/70 text-sm" data-testid="text-footer-location">
                 <MapPin size={14} />
