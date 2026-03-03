@@ -90,11 +90,11 @@ function Navbar() {
               </Button>
             </a>
             <a
-              href="tel:508-410-5391"
+              href="tel:8578006951"
               className={`text-sm font-medium ${scrolled ? "text-[#2e5032] dark:text-emerald-300" : "text-white/90"}`}
               data-testid="link-phone-nav"
             >
-              508-410-5391
+              (857) 800-6951
             </a>
           </div>
 
@@ -132,8 +132,8 @@ function Navbar() {
                 Apply Today
               </Button>
             </a>
-            <a href="tel:508-410-5391" className="text-[#2e5032] dark:text-emerald-300 font-medium py-2" data-testid="link-phone-mobile">
-              508-410-5391
+            <a href="tel:8578006951" className="text-[#2e5032] dark:text-emerald-300 font-medium py-2" data-testid="link-phone-mobile">
+              (857) 800-6951
             </a>
           </div>
         </div>
@@ -283,7 +283,7 @@ function DetailedReasons() {
               a home-like setting can offer. We ensure every child feels safe, seen, and cherished in a warm 
               environment that feels just like home.
             </p>
-            <a href="tel:508-410-5391">
+            <a href="tel:8578006951">
               <Button className="bg-[#1b5e20] dark:bg-emerald-700 text-white mt-4" data-testid="button-call-us">
                 <Phone size={16} className="mr-2" />
                 Call Us
@@ -772,9 +772,9 @@ function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-[#f9a825]">Contact Info</h4>
             <div className="space-y-3">
-              <a href="tel:508-410-5391" className="flex items-center gap-2 text-white/70 text-sm" data-testid="link-footer-phone">
+              <a href="tel:8578006951" className="flex items-center gap-2 text-white/70 text-sm" data-testid="link-footer-phone">
                 <Phone size={14} />
-                508-410-5391
+                (857) 800-6951
               </a>
               <a href="mailto:info@littlejungledaycare.com" className="flex items-center gap-2 text-white/70 text-sm" data-testid="link-footer-email">
                 <Mail size={14} />
