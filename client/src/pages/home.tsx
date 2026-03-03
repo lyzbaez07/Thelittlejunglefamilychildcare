@@ -459,7 +459,7 @@ function AboutSection() {
               />
               <div className="space-y-3">
                 <p className="text-foreground/80">
-                  Hello, my name is <strong>Dalia Graciela</strong>. With over <strong>20 years of experience</strong>, 
+                  Hello, my name is <strong>Lilly Baez</strong>. With over <strong>20 years of experience</strong>, 
                   I create a loving and supportive environment where children feel safe, confident, and valued.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-4">
