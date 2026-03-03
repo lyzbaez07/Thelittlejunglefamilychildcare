@@ -453,8 +453,8 @@ function AboutSection() {
             </h3>
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <img
-                src="/images/provider.png"
-                alt="Your Provider"
+                src="/images/provider.jpeg"
+                alt="Dalia Graciela"
                 className="w-36 h-44 rounded-xl object-cover shadow-md flex-shrink-0"
               />
               <div className="space-y-3">
