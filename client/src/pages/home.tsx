@@ -810,7 +810,7 @@ function Footer() {
               </a>
               <div className="flex items-center gap-2 text-white/70 text-sm" data-testid="text-footer-location">
                 <MapPin size={14} />
-                Massachusetts
+                Lower Mills, 02126
               </div>
             </div>
           </div>
