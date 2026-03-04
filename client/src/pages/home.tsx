@@ -386,6 +386,34 @@ function WeAreFamily() {
   );
 }
 
+function VideoSection() {
+  return (
+    <section className="py-20 px-4 bg-[#f5f9f5] dark:bg-[#0f1f0f]" data-testid="section-video">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#1b5e20] dark:text-emerald-400 mb-4" data-testid="text-video-title">
+          A Day In Our Jungle
+        </h2>
+        <p className="text-muted-foreground mb-10 text-lg">
+          See how our little explorers learn, play, and grow every day
+        </p>
+        <div className="rounded-2xl shadow-xl bg-black">
+          <video
+            controls
+            playsInline
+            className="w-full rounded-2xl"
+            poster="/images/hero1.png"
+            data-testid="video-daycare"
+          >
+            <source src="/images/daycare-video.mov" type="video/quicktime" />
+            <source src="/images/daycare-video.mov" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function LearnPlayGrow() {
   const items = [
     { title: "Learn", icon: GraduationCap, image: "/images/learn.png", desc: "Structured activities that spark curiosity and early development" },
@@ -806,6 +834,7 @@ export default function Home() {
       <TopReasons />
       <DetailedReasons />
       <WeAreFamily />
+      <VideoSection />
       <LearnPlayGrow />
       <AboutSection />
       <TuitionSection />
