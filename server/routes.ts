@@ -4,7 +4,7 @@ import { storage } from "./storage";
 import { contactInquirySchema } from "@shared/schema";
 import { getUncachableResendClient } from "./resend";
 
-const FORWARD_EMAIL = "Thelittlejunglefamilychildcare@gmail.com";
+const FORWARD_EMAIL = "victor.reyesii@gmail.com";
 
 export async function registerRoutes(
   httpServer: Server,
