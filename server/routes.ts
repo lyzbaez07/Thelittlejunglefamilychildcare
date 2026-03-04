@@ -4,7 +4,7 @@ import { storage } from "./storage";
 import { contactInquirySchema } from "@shared/schema";
 import { getUncachableResendClient } from "./resend";
 
-const FORWARD_EMAIL = "victor.reyesii@gmail.com";
+const FORWARD_EMAIL = "thelittlejunglefamilychildcare@gmail.com";
 
 export async function registerRoutes(
   httpServer: Server,
@@ -16,9 +16,11 @@ export async function registerRoutes(
       const inquiry = await storage.createInquiry(data);
 
       try {
+        console.log("Attempting to send email to:", FORWARD_EMAIL);
         const { client, fromEmail } = await getUncachableResendClient();
-        await client.emails.send({
-          from: fromEmail || "onboarding@resend.dev",
+        console.log("Resend client created, from email:", fromEmail);
+        const emailResult = await client.emails.send({
+          from: "The Little Jungle <onboarding@resend.dev>",
           to: FORWARD_EMAIL,
           subject: `New Inquiry from ${data.firstName} ${data.lastName} - The Little Jungle`,
           html: `
@@ -33,8 +35,10 @@ export async function registerRoutes(
             <p style="color: #666; font-size: 12px;">This message was sent from The Little Jungle Family Child Care website contact form.</p>
           `,
         });
-      } catch (emailError) {
-        console.error("Failed to send email notification:", emailError);
+        console.log("Email send result:", JSON.stringify(emailResult));
+      } catch (emailError: any) {
+        console.error("Failed to send email notification:", emailError?.message || emailError);
+        console.error("Full error:", JSON.stringify(emailError, null, 2));
       }
 
       res.json({ success: true, inquiry });
