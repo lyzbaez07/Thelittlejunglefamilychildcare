@@ -13,8 +13,16 @@ A jungle-themed family childcare website for "The Little Jungle Family Child Car
 - `client/src/pages/home.tsx` - Main landing page with all sections (Navbar, Hero Slider, Reasons, Learn/Play/Grow, About, Tuition, Contact Form, Footer)
 - `client/src/App.tsx` - Root app component with routing
 - `client/src/index.css` - Theme variables (jungle green color scheme)
-- `server/routes.ts` - Contact form POST endpoint
+- `server/routes.ts` - Contact form POST endpoint (sends email via Resend)
+- `server/resend.ts` - Resend email client integration
 - `server/storage.ts` - In-memory storage for contact inquiries
+
+## Email Integration
+- **Service**: Resend (via Replit connector)
+- **Forward to**: Thelittlejunglefamilychildcare@gmail.com
+- **Trigger**: Contact form submission sends formatted email with all form fields
+- **Provider**: Lilly Baez
+- **Phone**: (857) 800-6951
 
 ## Theme
 - **Brand**: "The Little Jungle Family Child Care"
