@@ -396,11 +396,11 @@ function VideoSection() {
         <p className="text-muted-foreground mb-10 text-lg">
           See how our little explorers learn, play, and grow every day
         </p>
-        <div className="rounded-2xl shadow-xl bg-black">
+        <div className="rounded-2xl shadow-xl bg-black aspect-video">
           <video
             controls
             playsInline
-            className="w-full rounded-2xl"
+            className="w-full h-full rounded-2xl object-cover"
             poster="/images/hero1.png"
             data-testid="video-daycare"
           >
