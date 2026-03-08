@@ -25,9 +25,9 @@ const contactFormSchema = z.object({
 type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 const heroSlides = [
-  { image: "/images/hero1.png", title: "Join Our Jungle Family", subtitle: "Where every child's adventure begins", cta: "Apply Today" },
-  { image: "/images/hero2.png", title: "The Perfect Place For Growth", subtitle: "Nurturing creativity through nature and play", cta: "Schedule A Tour" },
-  { image: "/images/hero3.png", title: "A Jungle of Learning & Fun", subtitle: "Explore, discover, and grow together", cta: "Apply Now" },
+  { image: "/images/real-room-full.jpeg", title: "Join Our Jungle Family", subtitle: "Where every child's adventure begins", cta: "Apply Today" },
+  { image: "/images/real-activity-table.jpeg", title: "The Perfect Place For Growth", subtitle: "Nurturing creativity through nature and play", cta: "Schedule A Tour" },
+  { image: "/images/real-welcome-wall.jpeg", title: "A Jungle of Learning & Fun", subtitle: "Explore, discover, and grow together", cta: "Apply Now" },
 ];
 
 function Navbar() {
@@ -42,6 +42,7 @@ function Navbar() {
 
   const navLinks = [
     { label: "About", href: "#about" },
+    { label: "Gallery", href: "#gallery" },
     { label: "Tuition", href: "#tuition" },
     { label: "Contact", href: "#contact" },
   ];
@@ -232,9 +233,9 @@ function HeroSlider() {
 
 function TopReasons() {
   const reasons = [
-    { image: "/images/reason-home.png", title: "A Home Away From Home", icon: HomeIcon },
-    { image: "/images/reason-nurture.png", title: "Personalized Nurturing", icon: Heart },
-    { image: "/images/reason-trust.png", title: "Trust & Partnership", icon: Shield },
+    { image: "/images/real-room-corner.jpeg", title: "A Home Away From Home", icon: HomeIcon },
+    { image: "/images/real-play-area.jpeg", title: "Personalized Nurturing", icon: Heart },
+    { image: "/images/real-reading-corner.jpeg", title: "Trust & Partnership", icon: Shield },
   ];
 
   return (
@@ -295,7 +296,7 @@ function DetailedReasons() {
           </div>
           <div className="rounded-2xl shadow-xl">
             <img
-              src="/images/reason-home.png"
+              src="/images/real-cubbies.jpeg"
               alt="A Home Away From Home"
               className="w-full h-80 object-cover rounded-2xl"
             />
@@ -305,7 +306,7 @@ function DetailedReasons() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1 rounded-2xl shadow-xl">
             <img
-              src="/images/reason-nurture.png"
+              src="/images/real-toys-storage.jpeg"
               alt="Personalized Nurturing"
               className="w-full h-80 object-cover rounded-2xl"
             />
@@ -352,7 +353,7 @@ function DetailedReasons() {
           </div>
           <div className="rounded-2xl shadow-xl">
             <img
-              src="/images/reason-trust.png"
+              src="/images/real-books-wall.jpeg"
               alt="Trust & Partnership"
               className="w-full h-80 object-cover rounded-2xl"
             />
@@ -367,7 +368,7 @@ function WeAreFamily() {
   return (
     <section className="relative py-24 px-4" data-testid="section-family">
       <div className="absolute inset-0 bg-[#1b5e20] dark:bg-[#0d3311]" />
-      <div className="absolute inset-0 bg-[url('/images/hero1.png')] bg-cover bg-center opacity-20" />
+      <div className="absolute inset-0 bg-[url('/images/real-room-full.jpeg')] bg-cover bg-center opacity-20" />
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <p className="text-[#f9a825] font-semibold text-lg mb-3 tracking-wider uppercase">Now Accepting Enrollments!</p>
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-8" data-testid="text-family-title">
@@ -412,7 +413,7 @@ function VideoSection() {
             controls
             playsInline
             className="w-full h-full rounded-2xl object-cover"
-            poster="/images/hero1.png"
+            poster="/images/real-room-full.jpeg"
             data-testid="video-daycare"
           >
             <source src="/images/daycare-video.mov" type="video/quicktime" />
@@ -427,9 +428,9 @@ function VideoSection() {
 
 function LearnPlayGrow() {
   const items = [
-    { title: "Learn", icon: GraduationCap, image: "/images/learn.png", desc: "Structured activities that encourage curiosity, creativity, and early childhood development." },
-    { title: "Play", icon: Palette, image: "/images/play.png", desc: "Fun and engaging experiences that inspire imagination and social interaction." },
-    { title: "Grow", icon: Sprout, image: "/images/hero2.png", desc: "A nurturing environment that supports every child's learning and developmental milestones." },
+    { title: "Learn", icon: GraduationCap, image: "/images/real-learning-window.jpeg", desc: "Structured activities that encourage curiosity, creativity, and early childhood development." },
+    { title: "Play", icon: Palette, image: "/images/real-play-kitchen.jpeg", desc: "Fun and engaging experiences that inspire imagination and social interaction." },
+    { title: "Grow", icon: Sprout, image: "/images/real-info-board.jpeg", desc: "A nurturing environment that supports every child's learning and developmental milestones." },
   ];
 
   return (
@@ -463,6 +464,52 @@ function LearnPlayGrow() {
               <div className="p-6">
                 <p className="text-foreground/75">{item.desc}</p>
               </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function PhotoGallery() {
+  const photos = [
+    { src: "/images/real-room-full.jpeg", alt: "Full classroom view with tables and learning stations" },
+    { src: "/images/real-activity-table.jpeg", alt: "Activity table and play area" },
+    { src: "/images/real-welcome-wall.jpeg", alt: "Welcome wall with jungle animal murals" },
+    { src: "/images/real-play-area.jpeg", alt: "Play area with bilingual posters and toys" },
+    { src: "/images/real-toys-storage.jpeg", alt: "Organized toy storage and learning materials" },
+    { src: "/images/real-cubbies.jpeg", alt: "Children's cubbies and storage area" },
+    { src: "/images/real-highchairs.jpeg", alt: "Highchair seating area" },
+    { src: "/images/real-reading-corner.jpeg", alt: "Cozy reading corner with books" },
+    { src: "/images/real-books-wall.jpeg", alt: "Book wall and reading nook" },
+    { src: "/images/real-learning-window.jpeg", alt: "Learning window with bilingual charts" },
+    { src: "/images/real-play-kitchen.jpeg", alt: "Play kitchen for imaginative play" },
+    { src: "/images/real-cozy-corner.jpeg", alt: "Cozy corner with jungle decor" },
+    { src: "/images/real-room-corner.jpeg", alt: "Room corner with storage" },
+    { src: "/images/real-info-board.jpeg", alt: "Information board and learning area" },
+    { src: "/images/real-changing-station.jpeg", alt: "Clean changing station" },
+  ];
+
+  return (
+    <section id="gallery" className="py-20 px-4 bg-[#f5f9f5] dark:bg-[#0f1f0f]" data-testid="section-gallery">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1b5e20] dark:text-emerald-400 mb-4" data-testid="text-gallery-title">
+          Take A Look Inside Our Jungle
+        </h2>
+        <p className="text-center text-foreground/75 max-w-2xl mx-auto mb-12 text-lg">
+          A clean, safe, and welcoming space designed for learning, play, and exploration.
+        </p>
+        <div className="columns-2 md:columns-3 gap-4 space-y-4">
+          {photos.map((photo, i) => (
+            <div key={i} className="break-inside-avoid rounded-xl overflow-hidden shadow-lg group">
+              <img
+                src={photo.src}
+                alt={photo.alt}
+                className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+                data-testid={`img-gallery-${i}`}
+              />
             </div>
           ))}
         </div>
@@ -874,6 +921,7 @@ export default function Home() {
       <WeAreFamily />
       <VideoSection />
       <LearnPlayGrow />
+      <PhotoGallery />
       <AboutSection />
       <TuitionSection />
       <ContactSection />

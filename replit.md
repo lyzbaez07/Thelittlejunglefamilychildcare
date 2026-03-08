@@ -43,16 +43,19 @@ A jungle-themed family childcare website for "The Little Jungle Family Child Car
 - `client/public/images/logo-real.jpg` - Real business logo (rainbow with jungle animals)
 - `client/public/images/provider.jpeg` - Real provider photo (Lilly Baez)
 - `client/public/images/flyer.jpeg` - Business flyer (Spanish enrollment flyer)
-- AI-generated: hero1-3.png, reason-home/nurture/trust.png, learn.png, play.png
+- 15 real daycare photos: real-room-full, real-activity-table, real-welcome-wall, real-play-area, real-toys-storage, real-cubbies, real-highchairs, real-reading-corner, real-books-wall, real-learning-window, real-play-kitchen, real-cozy-corner, real-room-corner, real-info-board, real-changing-station (.jpeg)
+- Old AI images no longer used but still in directory
 
 ## Sections
-1. Fixed navbar with scroll effect (real logo)
-2. Hero image slider (3 slides, auto-rotate)
-3. Top 3 Reasons overview (circular images)
-4. Detailed reasons with alternating layout
+1. Fixed navbar with scroll effect (real logo) + Gallery nav link
+2. Hero image slider (3 real daycare photos, auto-rotate)
+3. Top 3 Reasons overview (real photos)
+4. Detailed reasons with alternating layout (real photos)
 5. "We Are A Family" CTA banner (with "Now Accepting Enrollments!" and bilingual/meals info)
-6. Learn / Play / Grow cards
-7. About section with bilingual/EEC/hours/meals badges, provider bio (full text), and learning environment details
-8. Tuition pricing cards (7:30am-5:30pm)
-9. Contact/Book a Tour form
-10. Footer with links, contact info, bilingual/EEC, and hours
+6. Video section ("A Day In Our Jungle")
+7. Learn / Play / Grow cards (real photos)
+8. Photo Gallery - masonry layout with all 15 real daycare photos, hover zoom
+9. About section with bilingual/EEC/hours/meals badges, provider bio (full text), and learning environment details
+10. Tuition pricing cards (7:30am-5:30pm)
+11. Contact/Book a Tour form
+12. Footer with links, contact info, bilingual/EEC, and hours
