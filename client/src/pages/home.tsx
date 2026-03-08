@@ -474,21 +474,26 @@ function LearnPlayGrow() {
 
 function PhotoGallery() {
   const photos = [
-    { src: "/images/real-room-full.jpeg", alt: "Full classroom view with tables and learning stations" },
-    { src: "/images/real-activity-table.jpeg", alt: "Activity table and play area" },
-    { src: "/images/real-welcome-wall.jpeg", alt: "Welcome wall with jungle animal murals" },
-    { src: "/images/real-play-area.jpeg", alt: "Play area with bilingual posters and toys" },
-    { src: "/images/real-toys-storage.jpeg", alt: "Organized toy storage and learning materials" },
-    { src: "/images/real-cubbies.jpeg", alt: "Children's cubbies and storage area" },
+    { src: "/images/kids-circle-time.jpeg", alt: "Circle time with children and caregivers" },
     { src: "/images/real-highchairs.jpeg", alt: "Highchair seating area" },
-    { src: "/images/real-reading-corner.jpeg", alt: "Cozy reading corner with books" },
-    { src: "/images/real-books-wall.jpeg", alt: "Book wall and reading nook" },
-    { src: "/images/real-learning-window.jpeg", alt: "Learning window with bilingual charts" },
-    { src: "/images/real-play-kitchen.jpeg", alt: "Play kitchen for imaginative play" },
+    { src: "/images/kids-craft-pompoms.jpeg", alt: "Child doing a pom-pom craft activity" },
     { src: "/images/real-cozy-corner.jpeg", alt: "Cozy corner with jungle decor" },
-    { src: "/images/real-room-corner.jpeg", alt: "Room corner with storage" },
-    { src: "/images/real-info-board.jpeg", alt: "Information board and learning area" },
+    { src: "/images/kids-sitting-play.jpeg", alt: "Children sitting and playing together" },
+    { src: "/images/real-play-kitchen.jpeg", alt: "Play kitchen for imaginative play" },
+    { src: "/images/kids-craft-hearts-glue.jpeg", alt: "Child doing a Valentine's heart craft" },
     { src: "/images/real-changing-station.jpeg", alt: "Clean changing station" },
+    { src: "/images/kids-craft-hearts-done.jpeg", alt: "Child showing finished heart craft" },
+    { src: "/images/real-room-overview.jpeg", alt: "Daycare room overview with jungle murals" },
+    { src: "/images/kids-craft-wreath-red.jpeg", alt: "Child making a red wreath craft" },
+    { src: "/images/real-learning-window.jpeg", alt: "Learning window with bilingual charts" },
+    { src: "/images/kids-craft-baby.jpeg", alt: "Little one exploring craft materials" },
+    { src: "/images/birthday-setup.jpeg", alt: "Jungle-themed birthday celebration setup" },
+    { src: "/images/kids-craft-wreath-pink.jpeg", alt: "Child with pink wreath craft" },
+    { src: "/images/real-info-board.jpeg", alt: "Information board and learning area" },
+    { src: "/images/kids-craft-wreath-boy.jpeg", alt: "Child crafting a felt wreath" },
+    { src: "/images/birthday-cake.jpeg", alt: "Jungle birthday cake close-up" },
+    { src: "/images/kids-craft-together.jpeg", alt: "Children crafting together" },
+    { src: "/images/kids-craft-wreath-pink2.jpeg", alt: "Child with pink wreath creation" },
   ];
 
   return (
