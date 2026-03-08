@@ -30,18 +30,29 @@ A jungle-themed family childcare website for "The Little Jungle Family Child Car
 - **Font**: Poppins (sans-serif)
 - **Style**: Jungle/tropical theme throughout
 
+## Business Details
+- **Provider**: Lilly Baez (20+ years experience in Early Childhood Education)
+- **Phone**: (857) 800-6951
+- **Email**: Thelittlejunglefamilychildcare@gmail.com
+- **Location**: Lower Mills, 02126
+- **Hours**: Monday – Friday, 7:30am – 5:30pm
+- **Features**: Bilingual Child Care, Licensed by EEC, CDA Credential, CPR/First Aid Certified
+- **Meals**: Breakfast, Lunch & Snack Provided
+
 ## Images
-Generated AI images stored in `client/public/images/`:
-- logo.png, hero1-3.png, reason-home/nurture/trust.png, learn.png, play.png, provider.png
+- `client/public/images/logo-real.jpg` - Real business logo (rainbow with jungle animals)
+- `client/public/images/provider.jpeg` - Real provider photo (Lilly Baez)
+- `client/public/images/flyer.jpeg` - Business flyer (Spanish enrollment flyer)
+- AI-generated: hero1-3.png, reason-home/nurture/trust.png, learn.png, play.png
 
 ## Sections
-1. Fixed navbar with scroll effect
+1. Fixed navbar with scroll effect (real logo)
 2. Hero image slider (3 slides, auto-rotate)
 3. Top 3 Reasons overview (circular images)
 4. Detailed reasons with alternating layout
-5. "We Are A Family" CTA banner
+5. "We Are A Family" CTA banner (with "Now Accepting Enrollments!" and bilingual/meals info)
 6. Learn / Play / Grow cards
-7. About section with provider bio & environment
-8. Tuition pricing cards
+7. About section with bilingual/EEC/hours/meals badges, provider bio (full text), and learning environment details
+8. Tuition pricing cards (7:30am-5:30pm)
 9. Contact/Book a Tour form
-10. Footer with links and contact info
+10. Footer with links, contact info, bilingual/EEC, and hours

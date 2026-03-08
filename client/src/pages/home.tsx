@@ -58,7 +58,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-4 h-20">
           <a href="#" className="flex items-center gap-3" data-testid="link-home">
-            <img src="/images/logo.png" alt="The Little Jungle" className="h-14 w-14 rounded-full object-cover" />
+            <img src="/images/logo-real.jpg" alt="The Little Jungle" className="h-14 w-14 rounded-full object-cover" />
             <div className="flex flex-col">
               <span className={`font-bold text-lg leading-tight ${scrolled ? "text-[#1b5e20] dark:text-emerald-400" : "text-white"}`}>
                 The Little Jungle
@@ -369,12 +369,16 @@ function WeAreFamily() {
       <div className="absolute inset-0 bg-[#1b5e20] dark:bg-[#0d3311]" />
       <div className="absolute inset-0 bg-[url('/images/hero1.png')] bg-cover bg-center opacity-20" />
       <div className="relative z-10 max-w-4xl mx-auto text-center">
+        <p className="text-[#f9a825] font-semibold text-lg mb-3 tracking-wider uppercase">Now Accepting Enrollments!</p>
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-8" data-testid="text-family-title">
           We Are A Family
         </h2>
-        <p className="text-lg text-white/85 mb-10 max-w-2xl mx-auto">
+        <p className="text-lg text-white/85 mb-4 max-w-2xl mx-auto">
           Every child who walks through our doors becomes part of our jungle family. 
           We nurture, protect, and help them grow into confident, curious explorers.
+        </p>
+        <p className="text-white/75 mb-10 max-w-2xl mx-auto">
+          Bilingual Child Care · Licensed by EEC · Breakfast, Lunch & Snack Provided
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a href="#contact">
@@ -474,11 +478,27 @@ function AboutSection() {
         <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1b5e20] dark:text-emerald-400 mb-4" data-testid="text-about-title">
           The Little Jungle Family Child Care
         </h2>
-        <p className="text-center text-foreground/75 max-w-3xl mx-auto mb-16 text-lg">
-          The Little Jungle Family Child Care is a home-based daycare created to spark creativity, learning, 
-          and growth in a clean, safe, and nurturing environment. We offer structured learning spaces, a cozy 
-          nap area, and engaging activity zones designed to support each child's needs.
+        <p className="text-center text-foreground/75 max-w-3xl mx-auto mb-6 text-lg">
+          Bilingual Child Care · Licensed by EEC
         </p>
+        <div className="flex flex-wrap justify-center gap-4 mb-16">
+          <div className="flex items-center gap-2 bg-white dark:bg-[#1a2e1a] rounded-full px-5 py-2 shadow-sm">
+            <Clock size={16} className="text-[#f9a825]" />
+            <span className="text-sm font-medium text-foreground/80">Open Monday – Friday, 7:30am – 5:30pm</span>
+          </div>
+          <div className="flex items-center gap-2 bg-white dark:bg-[#1a2e1a] rounded-full px-5 py-2 shadow-sm">
+            <CheckCircle size={16} className="text-[#1b5e20] dark:text-emerald-400" />
+            <span className="text-sm font-medium text-foreground/80">Breakfast, Lunch & Snack Provided</span>
+          </div>
+          <div className="flex items-center gap-2 bg-white dark:bg-[#1a2e1a] rounded-full px-5 py-2 shadow-sm">
+            <Heart size={16} className="text-[#e57373]" />
+            <span className="text-sm font-medium text-foreground/80">Safe & Loving Environment</span>
+          </div>
+          <div className="flex items-center gap-2 bg-white dark:bg-[#1a2e1a] rounded-full px-5 py-2 shadow-sm">
+            <MapPin size={16} className="text-[#1b5e20] dark:text-emerald-400" />
+            <span className="text-sm font-medium text-foreground/80">Located in Lower Mills, 02126</span>
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="bg-white dark:bg-[#1a2e1a] rounded-2xl p-8 shadow-lg" data-testid="card-provider">
@@ -489,22 +509,30 @@ function AboutSection() {
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <img
                 src="/images/provider.jpeg"
-                alt="Dalia Graciela"
+                alt="Lilly Baez"
                 className="w-36 h-44 rounded-xl object-cover shadow-md flex-shrink-0"
               />
               <div className="space-y-3">
                 <p className="text-foreground/80">
-                  Hello, my name is <strong>Lilly Baez</strong>. With over <strong>20 years of experience</strong>, 
-                  I create a loving and supportive environment where children feel safe, confident, and valued.
+                  Hello, my name is <strong>Lilly Baez</strong>, founder of <em>The Little Jungle Family Child Care</em>. With over <strong>20 years of experience in Early Childhood Education,</strong> I am dedicated to providing a safe, nurturing, and engaging environment where children can learn, grow, and feel valued every day.
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-4">
-                  {["Licensed by MA EEC", "CDA Credential", "Infant & Child CPR", "First Aid Certified"].map((cert) => (
-                    <div key={cert} className="flex items-center gap-2 text-sm text-foreground/70">
-                      <CheckCircle className="text-[#1b5e20] dark:text-emerald-400 flex-shrink-0" size={16} />
-                      <span>{cert}</span>
-                    </div>
-                  ))}
-                </div>
+                <p className="text-foreground/80">
+                  My program focuses on supporting each child's <strong>social, emotional, and cognitive development</strong> through hands-on learning, structured routines, and meaningful play. I believe that children learn best in a loving environment where they feel confident, supported, and encouraged to explore the world around them.
+                </p>
+              </div>
+            </div>
+            <div className="space-y-2 mt-6">
+              <div className="flex items-center gap-2 text-foreground/80">
+                <CheckCircle className="text-[#1b5e20] dark:text-emerald-400 flex-shrink-0" size={18} />
+                <span>Licensed by the <strong>Massachusetts Department of Early Education and Care (EEC)</strong></span>
+              </div>
+              <div className="flex items-center gap-2 text-foreground/80">
+                <CheckCircle className="text-[#1b5e20] dark:text-emerald-400 flex-shrink-0" size={18} />
+                <span><strong>CDA Credential</strong> in Early Childhood Education</span>
+              </div>
+              <div className="flex items-center gap-2 text-foreground/80">
+                <CheckCircle className="text-[#1b5e20] dark:text-emerald-400 flex-shrink-0" size={18} />
+                <span><strong>Infant & Child CPR and First Aid Certified</strong></span>
               </div>
             </div>
           </div>
@@ -516,9 +544,9 @@ function AboutSection() {
             </h3>
             <div className="space-y-6">
               {[
-                { title: "Structured Learning Spaces", desc: "Hands-on activities that spark creativity and early development." },
-                { title: "Cozy Nap Area", desc: "A peaceful space designed for comfort and healthy routines." },
-                { title: "Engaging Activity Zones", desc: "Fun areas that support imagination and growth." },
+                { title: "Structured Learning Spaces", desc: "Hands-on activities that encourage creativity, exploration, and early childhood development." },
+                { title: "Comfortable Rest Time Routine", desc: "Children enjoy a calm and cozy rest time that supports healthy routines and relaxation during the day." },
+                { title: "Engaging Activity Areas", desc: "Fun and inviting spaces designed to support imagination, play, and social interaction." },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4 items-start">
                   <div className="w-10 h-10 rounded-full bg-[#1b5e20]/10 dark:bg-emerald-400/10 flex items-center justify-center flex-shrink-0 mt-1">
@@ -557,7 +585,7 @@ function TuitionSection() {
             <p className="text-sm text-muted-foreground mb-4">Full-Time | 5 Days</p>
             <div className="flex items-center gap-2 text-sm text-foreground/70 mb-6">
               <Clock size={16} className="text-[#f9a825]" />
-              <span>6:30 a.m. - 4:30 p.m.</span>
+              <span>7:30 a.m. - 5:30 p.m.</span>
             </div>
             <div className="text-4xl font-bold text-[#1b5e20] dark:text-emerald-400" data-testid="text-price-infants">
               $361 <span className="text-lg font-normal text-muted-foreground">/ week</span>
@@ -571,7 +599,7 @@ function TuitionSection() {
             <p className="text-sm text-muted-foreground mb-4">Full-Time | 5 Days</p>
             <div className="flex items-center gap-2 text-sm text-foreground/70 mb-6">
               <Clock size={16} className="text-[#f9a825]" />
-              <span>6:30 a.m. - 4:30 p.m.</span>
+              <span>7:30 a.m. - 5:30 p.m.</span>
             </div>
             <div className="text-4xl font-bold text-[#1b5e20] dark:text-emerald-400" data-testid="text-price-toddlers">
               $310 <span className="text-lg font-normal text-muted-foreground">/ week</span>
@@ -784,14 +812,17 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src="/images/logo.png" alt="Logo" className="w-12 h-12 rounded-full object-cover" />
+              <img src="/images/logo-real.jpg" alt="Logo" className="w-12 h-12 rounded-full object-cover" />
               <div>
                 <h3 className="font-bold text-lg">The Little Jungle</h3>
                 <p className="text-white/60 text-sm">Family Child Care</p>
               </div>
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
-              A nurturing, jungle-themed home daycare where every child is part of our family.
+              Bilingual Child Care · Licensed by EEC
+            </p>
+            <p className="text-white/70 text-sm leading-relaxed mt-2">
+              Open Monday – Friday, 7:30am – 5:30pm
             </p>
           </div>
 
