@@ -278,10 +278,13 @@ function DetailedReasons() {
               </h2>
             </div>
             <p className="text-lg leading-relaxed text-foreground/80" data-testid="text-reason1-desc">
-              At The Little Jungle Family Child Care, your child isn't just a number—they are part of our family. 
-              As a private, mom-and-pop daycare, we provide the kind of personalized love and attention that only 
-              a home-like setting can offer. We ensure every child feels safe, seen, and cherished in a warm 
-              environment that feels just like home.
+              At <strong>The Little Jungle Family Child Care</strong>, every child is treated like family. Our 
+              small, nurturing environment allows us to provide personalized attention so each child feels safe, 
+              supported, and valued.
+            </p>
+            <p className="text-lg leading-relaxed text-foreground/80">
+              We create a warm, home-like setting where children can <strong>learn, play, explore, 
+              and grow</strong> while building important social and developmental skills.
             </p>
             <a href="tel:8578006951">
               <Button className="bg-[#1b5e20] dark:bg-emerald-700 text-white mt-4" data-testid="button-call-us">
@@ -315,10 +318,12 @@ function DetailedReasons() {
               </h2>
             </div>
             <p className="text-lg leading-relaxed text-foreground/80" data-testid="text-reason2-desc">
-              <strong>Tailored to their unique pace.</strong> We believe that every child deserves a seat at the table, 
-              not just a spot in a classroom. Our small group sizes allow us to focus on your child's specific needs, 
-              interests, and developmental milestones. From play-based discovery to healthy, home-style snacks, we 
-              provide a level of individual care that larger centers simply can't match.
+              Every child develops at their own pace, and we respect and support that journey. Our small group 
+              setting allows us to focus on each child's individual needs, interests, and developmental milestones.
+            </p>
+            <p className="text-lg leading-relaxed text-foreground/80">
+              Through play-based learning and daily routines, we provide the kind of individualized care that 
+              helps children feel confident, happy, and supported.
             </p>
           </div>
         </div>
@@ -332,10 +337,12 @@ function DetailedReasons() {
               </h2>
             </div>
             <p className="text-lg leading-relaxed text-foreground/80" data-testid="text-reason3-desc">
-              <strong>Roots in our community.</strong> When you join us, you're gaining more than just childcare; 
-              you're gaining a partnership. We take pride in building deep, lasting relationships with our parents. 
-              You'll always have a direct line to the people actually caring for your child, giving you the peace of 
-              mind that comes from knowing exactly who is helping your little one grow.
+              We believe that strong relationships with families are the foundation of quality child care. We work 
+              closely with parents to support each child's development and well-being.
+            </p>
+            <p className="text-lg leading-relaxed text-foreground/80">
+              Open communication, trust, and collaboration help create a positive experience for both children 
+              and families.
             </p>
             <a href="#contact">
               <Button className="bg-[#f9a825] text-[#1b3a1b] font-semibold mt-4 border-[#e8971f]" data-testid="button-apply-reason">
@@ -416,9 +423,9 @@ function VideoSection() {
 
 function LearnPlayGrow() {
   const items = [
-    { title: "Learn", icon: GraduationCap, image: "/images/learn.png", desc: "Structured activities that spark curiosity and early development" },
-    { title: "Play", icon: Palette, image: "/images/play.png", desc: "Fun-filled adventures that inspire creativity and imagination" },
-    { title: "Grow", icon: Sprout, image: "/images/hero2.png", desc: "Nurturing environments that support every milestone" },
+    { title: "Learn", icon: GraduationCap, image: "/images/learn.png", desc: "Structured activities that encourage curiosity, creativity, and early childhood development." },
+    { title: "Play", icon: Palette, image: "/images/play.png", desc: "Fun and engaging experiences that inspire imagination and social interaction." },
+    { title: "Grow", icon: Sprout, image: "/images/hero2.png", desc: "A nurturing environment that supports every child's learning and developmental milestones." },
   ];
 
   return (
