@@ -616,52 +616,27 @@ function AboutSection() {
 function TuitionSection() {
   return (
     <section id="tuition" className="py-20 px-4 bg-background" data-testid="section-tuition">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1b5e20] dark:text-emerald-400 mb-4" data-testid="text-tuition-title">
-          Tuition & Weekly Investment
+      <div className="max-w-3xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#1b5e20] dark:text-emerald-400 mb-10" data-testid="text-tuition-title">
+          Tuition & Enrollment
         </h2>
-        <p className="text-center text-muted-foreground mb-14 text-lg">
-          Transparent pricing for exceptional care
-        </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-white dark:bg-[#1a2e1a] rounded-2xl p-8 shadow-lg border-t-4 border-[#1b5e20] dark:border-emerald-500" data-testid="card-tuition-infants">
-            <h3 className="text-xl font-bold text-[#1b5e20] dark:text-emerald-400 mb-2">
-              Infants (3 Months - 2 Years)
-            </h3>
-            <p className="text-sm text-muted-foreground mb-4">Full-Time | 5 Days</p>
-            <div className="flex items-center gap-2 text-sm text-foreground/70 mb-6">
-              <Clock size={16} className="text-[#f9a825]" />
-              <span>7:30 a.m. - 5:30 p.m.</span>
-            </div>
-            <div className="text-4xl font-bold text-[#1b5e20] dark:text-emerald-400" data-testid="text-price-infants">
-              $361 <span className="text-lg font-normal text-muted-foreground">/ week</span>
-            </div>
-          </div>
-
-          <div className="bg-white dark:bg-[#1a2e1a] rounded-2xl p-8 shadow-lg border-t-4 border-[#f9a825]" data-testid="card-tuition-toddlers">
-            <h3 className="text-xl font-bold text-[#1b5e20] dark:text-emerald-400 mb-2">
-              Toddlers & Preschool (2 - 5 Years)
-            </h3>
-            <p className="text-sm text-muted-foreground mb-4">Full-Time | 5 Days</p>
-            <div className="flex items-center gap-2 text-sm text-foreground/70 mb-6">
-              <Clock size={16} className="text-[#f9a825]" />
-              <span>7:30 a.m. - 5:30 p.m.</span>
-            </div>
-            <div className="text-4xl font-bold text-[#1b5e20] dark:text-emerald-400" data-testid="text-price-toddlers">
-              $310 <span className="text-lg font-normal text-muted-foreground">/ week</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="text-center bg-[#f9a825]/10 dark:bg-[#f9a825]/5 rounded-xl p-6" data-testid="card-enrollment-info">
-          <h3 className="text-xl font-bold text-[#1b5e20] dark:text-emerald-400 mb-3">Enrollment Information</h3>
-          <p className="text-foreground/75">
-            <strong>Deposit:</strong> $25 | <strong>Registration Fee:</strong> $0
+        <div className="bg-white dark:bg-[#1a2e1a] rounded-2xl p-10 shadow-lg border-t-4 border-[#1b5e20] dark:border-emerald-500" data-testid="card-tuition-info">
+          <p className="text-lg text-foreground/80 mb-6 leading-relaxed" data-testid="text-tuition-desc1">
+            At <em>The Little Jungle Family Child Care</em>, tuition is determined based on your child's schedule and hours of care needed.
           </p>
-          <p className="text-foreground/65 mt-2 text-sm">
-            Same day daycare service available: Contact to learn about this program.
+          <p className="text-lg text-foreground/80 mb-6 leading-relaxed" data-testid="text-tuition-desc2">
+            We offer flexible scheduling options for families.
           </p>
+          <p className="text-lg text-foreground/80 mb-8 leading-relaxed" data-testid="text-tuition-desc3">
+            For detailed tuition information and availability, please contact us to schedule a tour of our program.
+          </p>
+          <a href="#contact">
+            <Button size="lg" className="bg-[#f9a825] text-[#1b3a1b] font-semibold border-[#e8971f]" data-testid="button-tuition-contact">
+              <Phone size={16} className="mr-2" />
+              Contact Us
+            </Button>
+          </a>
         </div>
       </div>
     </section>
