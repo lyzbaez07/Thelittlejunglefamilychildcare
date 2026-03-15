@@ -416,8 +416,8 @@ function VideoSection() {
             poster="/images/real-room-full.jpeg"
             data-testid="video-daycare"
           >
-            <source src="/images/daycare-video.mov" type="video/quicktime" />
-            <source src="/images/daycare-video.mov" type="video/mp4" />
+            <source src="/images/daycare-video-new.mov" type="video/quicktime" />
+            <source src="/images/daycare-video-new.mov" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
