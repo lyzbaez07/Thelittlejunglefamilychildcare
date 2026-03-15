@@ -413,7 +413,6 @@ function VideoSection() {
             controls
             playsInline
             className="w-full h-full rounded-2xl object-cover"
-            poster="/images/real-room-full.jpeg"
             data-testid="video-daycare"
           >
             <source src="/images/daycare-video-new.mov" type="video/quicktime" />
