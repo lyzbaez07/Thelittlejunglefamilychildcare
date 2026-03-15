@@ -585,6 +585,10 @@ function AboutSection() {
                 <CheckCircle className="text-[#1b5e20] dark:text-emerald-400 flex-shrink-0" size={18} />
                 <span><strong>Infant & Child CPR and First Aid Certified</strong></span>
               </div>
+              <div className="flex items-center gap-2 text-foreground/80">
+                <CheckCircle className="text-[#1b5e20] dark:text-emerald-400 flex-shrink-0" size={18} />
+                <span>Creator of the <strong>Baez Early Learning Curriculum</strong> — an infant education program adapted for children ages 3 months to 5 years old</span>
+              </div>
             </div>
           </div>
 
