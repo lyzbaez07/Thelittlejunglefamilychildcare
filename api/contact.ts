@@ -1,6 +1,16 @@
 import { Resend } from "resend";
-import { contactInquirySchema } from "../shared/schema";
+import { z } from "zod";
 import { randomUUID } from "crypto";
+
+const contactInquirySchema = z.object({
+  firstName: z.string().min(1),
+  lastName: z.string().min(1),
+  email: z.string().email(),
+  phone: z.string().min(7),
+  numberOfChildren: z.string().min(1),
+  ages: z.string().min(1),
+  message: z.string().optional(),
+});
 
 const FORWARD_EMAIL = "thelittlejunglefamilychildcare@gmail.com";
 
@@ -34,12 +44,13 @@ export default async function handler(req: any, res: any) {
         });
       }
     } catch (emailError: any) {
-      console.error("Failed to send email notification:", emailError?.message || emailError);
+      console.error("Failed to send email:", emailError?.message || emailError);
     }
 
     const inquiry = { ...data, id: randomUUID(), createdAt: new Date() };
     res.json({ success: true, inquiry });
   } catch (error: any) {
+    console.error("Contact form error:", error);
     if (error?.name === "ZodError") {
       res.status(400).json({ error: "Invalid form data" });
     } else {
